@@ -15,19 +15,27 @@ The code is compiled using [CMake](https://cmake.org/) and tested on Ubuntu 16.0
 Run `./Compile.sh` and an executable `AMM_NRR` will be generated.
 
 ## Usage
+Running `./run.sh` can execute the test example.
+
 The program is run with four input parameters:
 ```
 $ ./AMM_NRR <srcFile> <tarFile> <outPath> <landmarkFile>
+or 
+$ ./AMM_NRR <srcFile> <tarFile> <outPath> <radius> <alpha> <beta>
 ```
-1.`<srcFile>`: an input file storing the source mesh;
+1. `<srcFile>`: an input file storing the source mesh;
 
-2.`<tarFile>`: an input file storing the target mesh or point cloud; 
+2. `<tarFile>`: an input file storing the target mesh or point cloud; 
 
-3.`<outPath>`: an output file storing the path of registered source mesh; 
+3. `<outPath>`: an output file storing the path of registered source mesh; 
 
-4.`<landmarkFile>`: an landmark file (nx2 matrix, first column includes the indexes in source file, second column includes the indexes in target file, each row is a pair correspondences separated by space).
+4. `<landmarkFile>`: an landmark file (nx2 matrix, first column includes the indexes in source file, second column includes the indexes in target file, each row is a pair correspondences separated by space). `<landmarkFile>` can be ignored, our robust non-rigid registration method without landmarks will be used in this case.
 
-`<landmarkFile>` can be ignored, our robust non-rigid registration method without landmarks will be used in this case.
+5. `<radius>`: the sampling radius of deformation graph. 
+
+6. `<alpha>`: the weight parameter of `regularization term`.
+
+7. `<beta>`: the weight parameter of `rotation term`. 
 
 ### Notes
 
