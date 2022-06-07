@@ -42,8 +42,8 @@ $ ./AMM_NRR <srcFile> <tarFile> <outPath> <radius> <alpha> <beta>
 This code supports non-rigid registration from a triangle mesh to a mesh or a point cloud.
 
 ### Parameter choices
-1. The weight parameters of `regularization term` and `rotation term` can be set in `paras.alpha` and `paras.beta` in `main.cpp` respectively. You can increase them to make the model more maintain the original characteristics, and decrease them to make deformed model closer to the target model. 
-2. The sampling radius of deformation graph can be set in `paras.uni_sample_radio` in `main.cpp`.
+1. The weight parameters of `regularization term` and `rotation term` can be set in `paras.alpha` and `paras.beta` in `main.cpp` respectively or type in the command line. You can increase them to make the model more maintain the original characteristics, and decrease them to make deformed model closer to the target model. 
+2. The sampling radius of deformation graph can be set in `paras.uni_sample_radio` in `main.cpp` or type in the command line. 
 If you meet the error ''Error: Some points cannot be covered under the specified radius, please increase the radius'', you can
     - check if there are isolated vertices in the input source model. If yes, please preprocess the input source model so that there are no isolated vertices (Points not connected to any faces).
     - increase node sampling radius of deformation graph by setting "paras.uni_sample_radio" with a bigger value in "main.cpp". 
