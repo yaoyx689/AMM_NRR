@@ -1,5 +1,5 @@
 # AMM_NRR
-This repository includes the source code of the paper "Fast and Robust Non-Rigid Registration Using Accelerated Majorization-Minimization".
+This repository includes the source code of the paper [Fast and Robust Non-Rigid Registration Using Accelerated Majorization-Minimization](https://arxiv.org/abs/2206.03410).
 
 Authors: Yuxin Yao, [Bailin Deng](http://www.bdeng.me/), [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/) and [Juyong Zhang](http://staff.ustc.edu.cn/~juyong/).
 
